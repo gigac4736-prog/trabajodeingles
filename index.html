@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabajo de Inglés - Pascua Premium</title>
+<style>
+/* ======== BASE Y FONDO ======== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  color: #5a4a42;
+  min-height: 100vh;
+  position: relative;
+  background-size: 400% 400%;
+  background-color: #221f18;
+  animation: gradientMove 20s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+#mequedesinideas2{
+  margin-top: 150px;
+  font-size: 70px;
+}
+#integrantes {
+  margin-top: 500px;
+  font-size: 65px;
+  width: 80%;
+  max-width: 1600px;
+  margin-left:0;
+  margin-right: auto;
+  background: rgba(255,255,255,0.85);
+  padding: 30px 40px;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  backdrop-filter: blur(6px);
+}
+#A{
+  font-size: 60px;
+  margin-top: 150px;
+}
+/* ======== TEXTOS ======== */
+h1 {
+  text-align: center;
+  font-size: 120px;
+  color: #d68ca1;
+  margin-top: 50px;
+  text-shadow: 0 0 15px rgba(255,255,255,0.3);
+  animation: fadeUp 2s ease;
+}
+
+h2 {
+  text-align: center;
+  font-size: 120px;
+  color: #79b6b6;
+  margin-top: 80px;
+  animation: fadeUp 2s ease;
+}
+#resurrecion{
+  font-size: 70px;
+}
+#mequedesinideas{
+  margin-top: 150px;
+  font-size: 60px;
+}
+#donde{
+  font-size: 75px;
+  margin-top: 200px;
+}
+#texto{
+  font-size: 65px;
+  margin-top: 150px;
+}
+div {
+  margin: 40px auto;
+  width: 80%;
+  max-width: 1600px;
+  font-size: 36px;
+  line-height: 1.8;
+  background: rgba(255,255,255,0.85);
+  padding: 30px 40px;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  backdrop-filter: blur(6px);
+  animation: fadeUp 2s ease;
+}
+
+div:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeUp { 
+  from {opacity:0; transform:translateY(30px);} 
+  to {opacity:1; transform:translateY(0);} 
+}
+
+/* ======== CANVAS DE ANIMACIÓN ======== */
+#canvas {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+  pointer-events:none;
+}
+
+.pag2 {
+  display: none;
+}
+.pag3{
+  display: none;
+}
+.pag4{
+  display: none;
+}
+#indice {
+  margin-top: 300px;
+  width: 2000px;
+  max-width: 3800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 66px;
+  line-height: 3.5;
+}
+button{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  margin-top: -800px;
+  margin-left: 3650px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: rgba(255,255,255,0.4);
+  transform: scale(1.05);
+}
+#boton3{
+  margin-top: -200px;
+}
+#boton{
+  margin-top: -1000px;
+}
+#huevito1{
+  background: none;
+}
+#imagen1{
+ margin-left: 1100px;
+ margin-top: 100px;
+ width: 1700px;
+}
+
+#boton4{
+  margin-top: 400px;
+}
+</style>
+</head>
+<body>
+
+  <img id="huevito1" src="huevito112.png" alt="Chocolate Egg" style="display: none;">
+  
+<canvas id="canvas"></canvas>
+
+<h1 class="pag1" id="h1">Welcome to our English work</h1>
+
+<div class="pag1" id="indice">
+In this work we explain this: <br> 
+the history of Pascua.............................................Pag1 <br> 
+why we celebrate Pascua...........................................Pag1 <br> 
+where Pascua is celebrated.....................................Pag2
+</div>
+
+<div class="pag1" id="integrantes">
+  Members of this work: Carlos Adolfo and Akram Ahmed
+</div>
+
+<h2 class="pag2">The origins of Pascua</h2>
+<div class="pag2" id="resurrecion">History:</div>
+<div class="pag2" id="mequedesinideas">
+  Pascua started in the year 33 A.D in Jerusalem at the time of Jesus death, exactly the third day.
+</div>
+
+<div class="pag2" id="mequedesinideas2">Why we celebrate Pascua:</div>
+<div class="pag2" id="A">
+  Pascua is celebrated because it remembers the resurrection of Jesus. It is the most important celebration for Christians.<br><br>
+  Many <b>movies</b> and <b>songs</b> tell the story of Pascua. 
+For example, in the film <i>The Passion of the Christ</i>, directed by <b>Mel Gibson</b>, the actor <b>Jim Caviezel</b> plays Jesus. 
+His <b>performance</b> is perfect. 
+The <b>soundtrack</b> and <b>lyrics</b> are perfects 
+
+</div>
+
+<div class="pag3" id="donde">Where Pascua is celebrated</div>
+
+<div class="pag3" id="texto">
+  Usually, Pascua is celebrated all around the world, mainly in the United States and Europe. The most popular way is with decorated chocolate eggs.
+</div>
+
+<div class="pag4" id="curiosidades">Curiosities about Pascua</div>
+<div class="pag4" id="curiosidades2">
+  The word "Pascua" comes from the Jewish holiday "Pesaj" that celebrates the freedom of Jews from Egypt.<br>
+  The Easter bunny is a symbol of spring and fertility.<br>
+  In Argentina they make very big chocolate eggs, up to 8 meters and 4000 kilograms.
+</div>
+
+<img id="imagen1" src="imagen1.png" alt="Chocolate Egg22" style="display: none;" class="pag3">
+<button id="boton1">Go to page 2</button>
+<button id="boton3">Go to page 3</button>
+<button id="boton">Go to page 1</button>
+<button id="boton4">Go to page 4</button>
+
+<script>
+// ======== CANVAS SETUP ========
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+window.addEventListener('resize', ()=>{ canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+
+// ======== MOUSE ========
+let mouse = { x: canvas.width/2, y: canvas.height/2 };
+window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+
+// ======== HUEVOS FLOTANTES ========
+class Egg {
+  constructor(){
+    this.x = Math.random()*canvas.width;
+    this.y = Math.random()*canvas.height;
+    this.baseX = this.x;
+    this.baseY = this.y;
+    this.size = 15 + Math.random()*15;
+    this.vx = (Math.random()-0.5)*0.3;
+    this.vy = (Math.random()-0.5)*0.3;
+    this.color = `hsl(${Math.random()*50+30}, 70%, 75%)`;
+  }
+  update(){
+    this.x += this.vx;
+    this.y += this.vy;
+    if(this.x<0||this.x>canvas.width) this.vx*=-1;
+    if(this.y<0||this.y>canvas.height) this.vy*=-1;
+
+    let dx = this.x - mouse.x;
+    let dy = this.y - mouse.y;
+    let dist = Math.sqrt(dx*dx + dy*dy);
+    if(dist < 120){
+      let force = (120 - dist) * 0.03;
+      this.x += (dx/dist)*force;
+      this.y += (dy/dist)*force;
+    } else {
+      this.x += (this.baseX - this.x)*0.005;
+      this.y += (this.baseY - this.y)*0.005;
+    }
+  }
+  draw(){
+    const img = document.getElementById("huevito1");
+    ctx.drawImage(img, this.x - this.size, this.y - this.size, this.size*2, this.size*3);
+  }
+}
+let eggs = [];
+for(let i=0;i<25;i++) eggs.push(new Egg());
+
+// ======== AURORAS SUAVES ========
+class Aurora {
+  constructor(y, color, amp, speed){
+    this.y = y;
+    this.color = `rgba(255,180,200,0.9)`;
+    this.amp = amp;
+    this.speed = speed;
+    this.phase = Math.random()*Math.PI*2;
+  }
+  draw(){
+    ctx.beginPath();
+    ctx.moveTo(0, this.y);
+    for(let x=0;x<canvas.width;x+=10){
+      ctx.lineTo(x, this.y + Math.sin(x*0.02 + this.phase)*this.amp);
+    }
+    ctx.strokeStyle = this.color;
+    ctx.lineWidth = 30;
+    ctx.shadowBlur = 105;
+    ctx.shadowColor = this.color;
+    ctx.stroke();
+    this.phase += this.speed;
+  }
+}
+let auroras = [
+  new Aurora(canvas.height*0.2, 'rgba(255,220,200,0.2)', 40, 0.008),
+  new Aurora(canvas.height*0.5, 'rgba(200,230,255,0.15)', 50, 0.006),
+  new Aurora(canvas.height*0.8, 'rgba(255,240,200,0.12)', 30, 0.01)
+];
+
+// ======== ANIMACIÓN ========
+function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  auroras.forEach(a => a.draw());
+  eggs.forEach(e => { e.update(); e.draw(); });
+  requestAnimationFrame(animate);
+}
+animate();
+
+// ======== BOTONES PAGINAS ========
+let pagina2 = document.getElementById("boton1")
+let sieron = document.getElementsByClassName("pag2")
+let sieron2  = document.getElementsByClassName("pag1")
+let sieron3 = document.getElementsByClassName("pag3")
+let sieron4 = document.getElementsByClassName("pag4")
+let pagina3=document.getElementById("boton3")
+let integrantes = document.getElementById("integrantes")
+let pagina = document.getElementById("boton")
+let pagina4 = document.getElementById("boton4")
+
+pagina2.addEventListener("click",()=>{
+  for (let i = 0; i < sieron2.length; i++) sieron2[i].style.display = 'none';
+  for (let i = 0; i < sieron.length +3 ; i++){ 
+    sieron[i].style.display = 'block';
+    integrantes.style.display="none";
+  }
+  for (let i = 0; i < sieron4.length; i++) sieron4[i].style.display = 'none';
+})
+
+pagina3.addEventListener("click", () => {
+  for (let i = 0; i < sieron2.length; i++) sieron2[i].style.display = 'none';
+  for (let i = 0; i < sieron.length; i++) sieron[i].style.display = 'none';
+  for (let i = 0; i < sieron3.length; i++) sieron3[i].style.display = 'block';
+  for (let i = 0; i < sieron4.length; i++) sieron4[i].style.display = 'none';
+});
+
+pagina.addEventListener("click",()=>
+{
+  for (let i = 0; i < sieron2.length; i++) sieron2[i].style.display = 'block';
+  for (let i = 0; i < sieron.length; i++) sieron[i].style.display = 'none';
+  for (let i = 0; i < sieron3.length; i++) sieron3[i].style.display = 'none';
+  for (let i = 0; i < sieron4.length; i++) sieron4[i].style.display = 'none';
+})
+
+pagina4.addEventListener("click", () => {
+  for (let i = 0; i < sieron2.length; i++) sieron2[i].style.display = 'none';
+  for (let i = 0; i < sieron.length; i++) sieron[i].style.display = 'none';
+  for (let i = 0; i < sieron3.length; i++) sieron3[i].style.display = 'none';
+  for (let i = 0; i < sieron4.length; i++) sieron4[i].style.display = 'block';
+});
+</script>
+</body>
+</html>
+
+
+
